@@ -10,7 +10,29 @@ module.exports = {
   plugins: [require('daisyui')],
   darkTheme: 'dark',
   theme: {
-    extend: {},
+    fontSize: {
+      xxxs: '0.5rem',
+      xxs: '0.625rem',
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+    },
+    extend: {
+      fontFamily: {
+        'noto-serif': ['var(--font-noto-serif)'],
+        parisienne: ['var(--font-parisienne)'],
+      },
+      container: {
+        center: true,
+      },
+      maxWidth: {
+        mcard: '430px',
+      },
+    },
   },
   daisyui: {
     themes: [
