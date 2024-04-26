@@ -7,6 +7,7 @@
     "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.3",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
     "aos": "^2.3.4",

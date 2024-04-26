@@ -1,4 +1,5 @@
 import React from 'react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import './globals.css';
 
@@ -15,6 +16,8 @@ export const metadata = {
   description: 'The fastest way to build apps with Next.js and Supabase',
 };
 
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
+
 export default function RootLayout({
   children,
 }: {
@@ -27,6 +30,7 @@ export default function RootLayout({
           <WeddingStoreProvider>{children}</WeddingStoreProvider>
         </main>
       </body>
+      <GoogleAnalytics gaId={GA_ID} />
     </html>
   );
 }
