@@ -39,4 +39,6 @@ next-env.d.ts
 #**/wedding/*
 **/baby/*
 
+**/*.bak
+
 .idea
